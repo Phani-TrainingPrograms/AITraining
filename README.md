@@ -20,12 +20,15 @@ Demos on AI and Agentic AI
    ```
     py -m pip install google-genai
    ```
-9. Update the changes with the code from the shared Ex01.py
-10. Set the generated API Key from step 2 to the variable called api_key.
+9. Update the changes with the code from the shared Ex01.py.
+10. In the contents section, update the text property with the prompt(Question) that you want the AI to respond.
+<img width="571" height="257" alt="image" src="https://github.com/user-attachments/assets/02a73200-5782-4f54-9480-8df33580397b" />
+      
+12. Set the generated API Key from step 2 to the variable called api_key.
     ```
     api_key="UR_API_KEY",
     ``` 
-11. Save the file and run the following command to execute the python script.
+13. Save the file and run the following command to execute the python script.
     ```
     py scriptName.py
     ```        
