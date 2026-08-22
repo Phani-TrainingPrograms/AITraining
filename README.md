@@ -2,9 +2,10 @@
 Demos on AI and Agentic AI  
 
 ### Software to be installed
-1. Python 26.x and the scripts added to the Path Environment Variable.
-2. Antigravity or VS code IDE.
-3. Install pip if not available.
+1. Python 26.x from https://www.python.org/downloads/ and add Python to the Path Environment Variable.
+2. Antigravity from https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.5.5-4923483625488384/windows-x64/Antigravity%20IDE.exe.
+3. Alternatively you can also use Cursor instead of Antigravity as your IDE.
+4. Install pip if not available.
 
     
 ### Steps for creating a AI Project.
