@@ -35,6 +35,7 @@ Demos on AI and Agentic AI
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     ## Exercise 2
     ### Using .env file without hardcoding the API Key and the prompt.
+
     1. Create a new file called .env and place the content as shared in the .env file.
     2. Replace the API Key with your generated key.
     3. Create a new text file called Prompt_Ex02.txt which contains the prompt that we want the AI tool to generate the required infrastructure for the desired result.
@@ -44,6 +45,7 @@ Demos on AI and Agentic AI
     7. Open the AntiGravity ChatBot and drag the prompt_ex02.txt into the ChatBot and type review and implement
 
 <img width="354" height="52" alt="image" src="https://github.com/user-attachments/assets/5cb17ff3-b12c-4bbf-92a5-588aec635e56" />
+
     8. Allow the Antigravity agent to review the prompt and allow it to make changes to the existing code. Accept the changes. 
     9. After saving the file, run the python script as we did previously in step 13 of the previous exercise. Dont forget to change the filename.
     10. Notice that the terminal shall now be user responsive and waits for you to ask a Prompt for which it answers accordingly.
