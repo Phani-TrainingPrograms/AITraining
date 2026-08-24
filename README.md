@@ -62,7 +62,28 @@ Demos on AI and Agentic AI
 6. Open the AntiGravity ChatBot and drag the prompt_ex03.txt into the ChatBot and type review and implement -> You should perform this step whenever you want AntiGravity ChatBot to respond and generate the required code for your Application. 
 7. Antigravity Chat bot shall modify the contents of Ex03.py to suit our requirement. 
 8. Antigravity shall also generate ui.py that shall contain the code for UI. 
-9. Run the ui.py to see the desired output: The UI shall be displayed, allowing the user to chat and get responses. 
+9. Run the ui.py to see the desired output: The UI shall be displayed, allowing the user to chat and get responses.
+
+
+## Exercise 4
+### To create a function calling  to a json db to get data
+### What is Function calling?
+Function calling is the bridge between reasoning and action in AI. It lets models not just talk about the world but interact with it—fetching live data, running code, or automating workflows.
+
+Steps:
+1. Create a JSON file that contains sample data for a vegetable vendor which has a collection of Vegetables/Fruits with attributes Name, Type, Price. A Sample JSON file is shared. You can use the same file as your datasource.        
+2. Create a new file called Ex04.py and copy the contents of Ex03.py into it. This file shall be refered by Antigravity chatbot based on the inputs we provide to generate the User interface. 
+3. Create a new file called prompt_Ex04.txt which shall contain the prompt that allows to create an User interface for our existing Chat Bot. 
+4. Copy the contents of the SampleProj\prompt_Ex04.txt that is shared in the Repo. 
+5. Make sure to modify the path of the JSON File database.json as per your file location. 
+6. Open the AntiGravity ChatBot and drag the prompt_ex04.txt into the ChatBot and type review and implement -> You should perform this step whenever you want AntiGravity ChatBot to respond and generate the required code for your Application. 
+7. Antigravity Chat bot shall modify the contents of Ex03.py to suit our requirement. 
+8. Antigravity shall also generate ui.py that shall contain the code for UI. 
+9. Run the ui.py to see the desired output: The UI shall be displayed, allowing the user to chat and get responses.
+10. Click on load System prompt that facilitates the UI to take the database.json and get the desired results.  
+            
+
+
 
     
              
