@@ -63,6 +63,7 @@ Demos on AI and Agentic AI
 7. Antigravity Chat bot shall modify the contents of Ex03.py to suit our requirement. 
 8. Antigravity shall also generate ui.py that shall contain the code for UI. 
 9. Run the ui.py to see the desired output: The UI shall be displayed, allowing the user to chat and get responses.
+10. The ui.py and generated files from the Prompt will not be available in the repo, this will generated when you execute the commands using prompt.txt
 
 
 ## Exercise 4
