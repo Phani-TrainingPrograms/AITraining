@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Chatbot Suite (Ex02 &amp; Ex03) - Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-base: #0a0e17;
+            --bg-surface: #111827;
+            --bg-surface-elevated: #1a2234;
+            --bg-glass: rgba(26, 34, 52, 0.75);
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(99, 102, 241, 0.35);
+            
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            
+            --primary: #6366f1;
+            --primary-glow: rgba(99, 102, 241, 0.4);
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            --accent-cyan: #06b6d4;
+            --accent-emerald: #10b981;
+            --accent-amber: #f59e0b;
+            
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --radius-xl: 24px;
+            
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --font-display: 'Outfit', sans-serif;
+            --font-mono: 'Fira Code', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.65;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 15% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 85% 70%, rgba(236, 72, 153, 0.09) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+            background-attachment: fixed;
+            padding: 2.5rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+        }
+
+        /* Hero Header */
+        .hero {
+            text-align: center;
+            padding: 3rem 1.5rem 2.5rem;
+            position: relative;
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.12);
+            color: #818cf8;
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            backdrop-filter: blur(8px);
+        }
+
+        .badge.emerald {
+            background: rgba(16, 185, 129, 0.12);
+            color: #34d399;
+            border-color: rgba(16, 185, 129, 0.25);
+        }
+
+        .badge.cyan {
+            background: rgba(6, 182, 212, 0.12);
+            color: #22d3ee;
+            border-color: rgba(6, 182, 212, 0.25);
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* Glass Cards & Sections */
+        .card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(12px);
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: var(--border-highlight);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 0.85rem;
+        }
+
+        .card-header h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .card-header .icon {
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        /* Key Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1.25rem;
+        }
+
+        .feature-box {
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            transition: all 0.2s ease;
+        }
+
+        .feature-box:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .feature-box h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #a5b4fc;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-box p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Terminal Demo Box */
+        .terminal-preview {
+            background: #080c14;
+            border: 1px solid #1f293d;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .terminal-topbar {
+            background: #111928;
+            padding: 0.6rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid #1f293d;
+        }
+
+        .terminal-dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .terminal-dot.red { background: #ef4444; }
+        .terminal-dot.yellow { background: #f59e0b; }
+        .terminal-dot.green { background: #10b981; }
+
+        .terminal-title {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            margin-left: 0.5rem;
+        }
+
+        .terminal-body {
+            padding: 1.25rem;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        .terminal-body .prompt { color: #818cf8; font-weight: 600; }
+        .terminal-body .bot { color: #38bdf8; font-weight: 600; }
+        .terminal-body .system { color: #94a3b8; }
+        .terminal-body .exit-cmd { color: #f43f5e; font-weight: 600; }
+
+        /* Code Snippet Styles */
+        pre {
+            background: #080c14;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1.2rem;
+            overflow-x: auto;
+            font-family: var(--font-mono);
+            font-size: 0.88rem;
+            color: #e5e7eb;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        code {
+            font-family: var(--font-mono);
+            font-size: 0.88em;
+            background: rgba(99, 102, 241, 0.1);
+            color: #c7d2fe;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        .code-keyword { color: #c084fc; font-weight: 600; }
+        .code-fn { color: #60a5fa; }
+        .code-str { color: #86efac; }
+        .code-comment { color: #64748b; font-style: italic; }
+
+        /* File Structure Tree */
+        .file-tree {
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .file-item:last-child { margin-bottom: 0; }
+        .file-item .icon { font-size: 1rem; }
+        .file-item .desc { color: var(--text-muted); font-size: 0.8rem; margin-left: auto; }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        th {
+            background: var(--bg-surface-elevated);
+            color: #a5b4fc;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Hero Header -->
+        <header class="hero">
+            <div class="badge-container">
+                <span class="badge emerald">✓ Ex02 Complete</span>
+                <span class="badge emerald">✓ Ex03 Complete</span>
+                <span class="badge">Google GenAI SDK</span>
+                <span class="badge cyan">Tkinter UI</span>
+            </div>
+            <h1>Gemini AI Chatbot Suite</h1>
+            <p>Multi-turn chatbot powered by Google Gemini AI — available as a streaming <strong>terminal chatbot</strong> (Ex02) and a polished <strong>Tkinter desktop UI</strong> with short-term memory (Ex03).</p>
+        </header>
+
+        <!-- Project Structure -->
+        <section class="card">
+            <div class="card-header">
+                <span class="icon">📁</span>
+                <h2>Project Structure</h2>
+            </div>
+            <div class="file-tree">
+                <div class="file-item">
+                    <span class="icon">🐍</span>
+                    <strong>Ex02.py</strong>
+                    <span class="desc">Terminal chatbot with streaming &amp; multi-turn memory</span>
+                </div>
+                <div class="file-item">
+                    <span class="icon">🖥️</span>
+                    <strong>Ex03.py</strong>
+                    <span class="desc">Core Gemini bot logic (importable by ui.py)</span>
+                </div>
+                <div class="file-item">
+                    <span class="icon">🪟</span>
+                    <strong>ui.py</strong>
+                    <span class="desc">Tkinter desktop UI — wraps Ex03.py with short-term memory</span>
+                </div>
+                <div class="file-item">
+                    <span class="icon">🔐</span>
+                    <strong>.env</strong>
+                    <span class="desc">Environment configuration holding <code>GOOGLE_API_KEY</code></span>
+                </div>
+                <div class="file-item">
+                    <span class="icon">📦</span>
+                    <strong>requirements.txt</strong>
+                    <span class="desc">Project dependencies (<code>google-genai</code>, <code>python-dotenv</code>)</span>
+                </div>
+                <div class="file-item">
+                    <span class="icon">📄</span>
+                    <strong>readme.html</strong>
+                    <span class="desc">Complete project documentation &amp; walkthrough</span>
+                </div>
+                <div class="file-item">
+                    <span class="icon">📝</span>
+                    <strong>prompt_ex02.txt / prompt_ex03.txt</strong>
+                    <span class="desc">Original specifications for each exercise</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements & Enhancements Implemented -->
+        <section class="card">
+            <div class="card-header">
+                <span class="icon">⚡</span>
+                <h2>Key Capabilities & Implementation Details</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <h3>🔐 Secure Key Management</h3>
+                    <p>Replaced hardcoded API keys with <code>python-dotenv</code>. The script dynamically reads <code>GOOGLE_API_KEY</code> from <code>.env</code> with validation.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>💬 Multi-Turn Chat Memory</h3>
+                    <p>Leverages <code>client.chats.create()</code> to maintain full conversation context across turns, enabling follow-up questions.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>🌊 Real-Time Streaming</h3>
+                    <p>Responses stream token-by-token via <code>chat.send_message_stream()</code>, delivering zero-latency responsive output.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>🚪 Clean Exit Handling</h3>
+                    <p>Gracefully terminates the chat loop upon receiving exit commands (<code>quit</code>, <code>bye</code>, <code>exit</code>) or interrupt signals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terminal Demo & Commands -->
+        <section class="card">
+            <div class="card-header">
+                <span class="icon">💻</span>
+                <h2>Interactive Session Preview</h2>
+            </div>
+            <div class="terminal-preview">
+                <div class="terminal-topbar">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">python Ex02.py — Terminal</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="system">============================================================</div>
+                    <div class="system">Welcome to the Gemini AI Chatbot!</div>
+                    <div class="system">Type your questions below.</div>
+                    <div class="system">To end the conversation, type 'quit', 'bye', or 'exit'.</div>
+                    <div class="system">============================================================</div>
+                    <br>
+                    <span class="prompt">You: </span>My favorite color is teal.<br>
+                    <span class="bot">Bot: </span>That's a great choice! Teal is a calming and versatile color.<br>
+                    <br>
+                    <span class="prompt">You: </span>What was the color I just mentioned?<br>
+                    <span class="bot">Bot: </span>You mentioned your favorite color is teal!<br>
+                    <br>
+                    <span class="prompt">You: </span><span class="exit-cmd">exit</span><br>
+                    <span class="bot">Bot: </span>Goodbye! Have a wonderful day! 👋
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════ EX 03 SECTION ═══════════════════ -->
+        <section class="card" style="border-color: rgba(6,182,212,0.3);">
+            <div class="card-header">
+                <span class="icon">🖥️</span>
+                <h2>Ex03 — Tkinter Desktop Chatbot UI</h2>
+            </div>
+            <p style="color:var(--text-secondary); margin-bottom:1.25rem;">
+                <code>ui.py</code> provides a desktop window powered by Python's built-in
+                <code>tkinter</code> library. It calls the same Gemini backend used in
+                <code>Ex03.py</code> while adding a short-term memory window, colour-coded
+                messages, and a clean dark-mode design.
+            </p>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <h3>🎨 Colour-Coded Messages</h3>
+                    <p>User queries are displayed in <span style="color:#f38ba8;">red-pink</span>, bot replies in <span style="color:#89b4fa;">blue</span>. Each conversation turn is separated by a blank line for easy reading.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>🧠 Short-Term Memory (3 turns)</h3>
+                    <p>A <code>deque(maxlen=3)</code> keeps the last 3 user/bot exchanges and prepends them as context on every new request — giving the bot conversational awareness without an unlimited history.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>📐 90 / 10 Layout</h3>
+                    <p>The window uses a grid layout where the chat display occupies 90% of the height and the input row occupies 10%, matching the reference wireframe.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>📏 Half-Screen Launch</h3>
+                    <p>On startup the window automatically centres itself at exactly half the screen width and height, adapting to any monitor resolution.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ex03 Setup & Run -->
+        <section class="card">
+            <div class="card-header">
+                <span class="icon">🚀</span>
+                <h2>How to Run the Tkinter UI (Ex03)</h2>
+            </div>
+
+            <h3 style="margin-top:1rem; color:#a5b4fc; font-size:1rem;">1. Activate virtual environment &amp; install dependencies</h3>
+            <pre><code><span class="code-comment"># Windows PowerShell</span>
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt</code></pre>
+
+            <h3 style="margin-top:1.5rem; color:#a5b4fc; font-size:1rem;">2. Ensure your API key is in <code>.env</code></h3>
+            <pre><code>GOOGLE_API_KEY=your_gemini_api_key_here</code></pre>
+
+            <h3 style="margin-top:1.5rem; color:#a5b4fc; font-size:1rem;">3. Launch the UI</h3>
+            <pre><code>python ui.py</code></pre>
+
+            <h3 style="margin-top:1.5rem; color:#a5b4fc; font-size:1rem;">4. (Optional) Run the terminal bot</h3>
+            <pre><code>python Ex03.py</code></pre>
+        </section>
+
+        <!-- UI Preview (wireframe description) -->
+        <section class="card">
+            <div class="card-header">
+                <span class="icon">💬</span>
+                <h2>UI Behaviour Reference</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Behaviour</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Window size on open</td>
+                        <td>Half the screen (centred)</td>
+                    </tr>
+                    <tr>
+                        <td>Display / input split</td>
+                        <td>90% chat area, 10% input row</td>
+                    </tr>
+                    <tr>
+                        <td>User text colour</td>
+                        <td><span style="color:#f38ba8;">■</span> Red-pink (#f38ba8)</td>
+                    </tr>
+                    <tr>
+                        <td>Bot text colour</td>
+                        <td><span style="color:#89b4fa;">■</span> Blue (#89b4fa)</td>
+                    </tr>
+                    <tr>
+                        <td>Memory window</td>
+                        <td>Last 3 conversation pairs sent as context</td>
+                    </tr>
+                    <tr>
+                        <td>Send trigger</td>
+                        <td><code>Enter</code> key or <strong>Send</strong> button click</td>
+                    </tr>
+                    <tr>
+                        <td>Spacing</td>
+                        <td>One blank line after each bot reply</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            SampleProj • Gemini AI Development Training • Built with Python, Google GenAI SDK &amp; Tkinter
+        </footer>
+
+    </div>
+</body>
+</html>

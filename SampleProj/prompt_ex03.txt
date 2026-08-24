@@ -1,0 +1,22 @@
+Task : To create  ui for chat bot using tkinter for a existing bot.py
+
+Context :
+- Use Ex03.py
+- Use tkinter to create a simple ui use below file for reference.
+- reference ui : "C:\Trainings\AI training\SampleProj\ui.png"
+- on opening let the size be half of the screen
+- on button click, the ui should call the Ex03.py and get the response and display it in the ui
+- Let the response be in blue and user query in red 
+- after every conversation leave an empty line
+- let the display area be 90% of the height and 10% be the query entry height
+
+- use a list and create a short term memory of 3 consecutive conversations.
+
+
+
+folder structure :
+- Ex03.py : it will be a simple program to get input from terminal and respond.
+- ui.py : it will be a simple text box with a button to send the query
+- .env : houses the API key
+- requirements.txt : needed libraries
+- readme.html : to setup, run and see results

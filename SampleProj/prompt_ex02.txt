@@ -1,0 +1,15 @@
+Task: To create chat bot 
+
+Context:
+- create python environment
+- Use Ex02.py 
+- The API Key in Ex02.py is hardcoded. Thie correct API Key is in .env file. use it from there. 
+- use python's .env utility to load the API key
+- The input to the bot is hardcoded. Take the input from user from terminal and respond. 
+- Exit the loop when 'quit' or 'bye' or 'exit' is entered by the user.
+
+folder structure: 
+- Ex02.py
+- .env 
+- requirements.txt 
+- readme.html
