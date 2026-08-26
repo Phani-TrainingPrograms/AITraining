@@ -100,12 +100,17 @@ Steps:
 <img width="760" height="433" alt="image" src="https://github.com/user-attachments/assets/bb376e47-b649-4662-b49a-341b8eb278e5" />
 
 
-    
-             
+## Exercise 5
+### To use SQLite database to create an MCP server and implement Chatbot.
 
+#### What is MCP?
+- MCP (Model Context Protocol) is an open-source standard for connecting AI applications to external systems.
+- Using MCP, AI applications like Claude or ChatGPT can connect to data sources (e.g. local files, databases), tools (e.g. search engines, calculators) and workflows (e.g. specialized prompts)—enabling them to access key information and perform tasks. Consider MCP as a USB-C port for AI applications. Just as USB-C provides a standardized way to connect electronic devices, MCP provides a standardized way to connect AI applications to external systems.
 
+#### Architecture of MCP
+Refer the below document for more details:
+https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture
+<img width="1650" height="644" alt="image" src="https://github.com/user-attachments/assets/514f624d-172c-4345-9d61-41f9e8d8c81f" />
 
-
-# Day 2 Coverage
-### 
+#### Steps for 
  
