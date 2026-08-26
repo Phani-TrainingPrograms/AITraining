@@ -52,7 +52,7 @@ Demos on AI and Agentic AI
 ## Exercise 3
 ### To create User Interface for chat bot using tkinter.
 1. Design the User interface required for the chat bot using draw.io or Paint Application and save it as ui.png. A snap shot of it is shared below
-<img width="822" height="690" alt="image" src="https://github.com/user-attachments/assets/17606b49-11db-40e8-93d8-5f6821ef7910" />
+<img width="422" height="390" alt="image" src="https://github.com/user-attachments/assets/17606b49-11db-40e8-93d8-5f6821ef7910" />
 
 
 2. Create a new file called Ex03.py and copy the contents of Ex02.py into it. This file shall be modified by Antigravity chatbot based on the inputs we provide to generate the User interface. 
@@ -85,15 +85,23 @@ Steps:
 4. Copy the contents of the SampleProj\prompt_Ex04.txt that is shared in the Repo. 
 5. Make sure to modify the path of the JSON File database.json as per your file location in the prompt_Ex04.txt. 
 6. Open the AntiGravity ChatBot and drag the prompt_ex04.txt into the ChatBot and type review and implement -> You should perform this step whenever you want AntiGravity ChatBot to respond and generate the required code for your Application. 
-7. Antigravity Chat bot shall modify the contents of Ex03.py to suit our requirement. 
-8. Antigravity shall also generate ui.py that shall contain the code for UI. 
+7. Antigravity Chat bot shall modify the contents of Ex04.py to suit our requirement based on the inputs we have mentioned in the prompt. 
+8. Antigravity shall generate the following files :
+    a. ui.py that shall contain the code for UI and adds the button for loading System prompt and reset chat. This is the updation from the previous example. 
+    b. Tooling.py will contain the all the APIs and Functions required for extracting the information.
+    c. system_prompt.txt defines the role of the AI function calling assistant for querying grocery items and pricing.  
 9. Run the ui.py to see the desired output: The UI shall be displayed, allowing the user to chat and get responses.
-10. Click on load System prompt that facilitates the UI to take the database.json and get the desired results.  
-            
+10. Click on load System prompt that facilitates the UI to take the database.json and get the desired results.
 
+<img width="760" height="433" alt="image" src="https://github.com/user-attachments/assets/bb376e47-b649-4662-b49a-341b8eb278e5" />
 
 
     
              
 
 
+
+
+# Day 2 Coverage
+### 
+ 
