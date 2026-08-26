@@ -112,5 +112,26 @@ Refer the below document for more details:
 https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture
 <img width="1650" height="644" alt="image" src="https://github.com/user-attachments/assets/514f624d-172c-4345-9d61-41f9e8d8c81f" />
 
-#### Steps for 
+#### Steps:
+1. Create a new file called synth_data.txt and copy the contents from the shared file in the repo. 
+2. Drag the file into the Antigravity chatbot and append it with review and implement. 
+3. Antigravity shall generate the required databases into the containing folder. It uses faker to generate the data required for the databases.
+4. You should use the below script to install faker extension into the system. 
+```
+    py -m pip install faker
+```
+5. Add a new extension SqlLite Viewer to view the generated database and its data from the Antigravity. 
+<img width="243" height="181" alt="image" src="https://github.com/user-attachments/assets/6ce209f4-dc53-4c90-87ee-4154279cdacf" />
+
+6. The Chatbot shall generate the following files:
+    a. college.db ->The SQLLite database that contains the data for our chatbot. 
+    b. synth_data.py -> The script for extracting the data from the SQLLite. 
+7. Create a new file called question_prompt.txt and copy the contents from the question_prompt.txt in the repo.
+8. Drag the question_prompt.txt into the Antigravity chatbot and answer the relavent questions raised by the chatbot.
+
+```
+NOTE: This questionaire is more like a Congitive Verifier Technique  which provides a platform for discussion with the expert. 
+```     
+9. After all the questions are answered, ask the Chatbot to generate the required files. 
+10. This shall update the tooling.py. 
  
