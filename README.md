@@ -136,7 +136,7 @@ NOTE: This questionaire is more like a Congitive Verifier Technique  which provi
 ```     
 9. After all the questions are answered, ask the Chatbot to generate the required files. 
 10. This shall update the tooling.py.
-11. Run the tooling.py in a separate terminal
+11. Run the tooling.py in a separate terminal.
 12. Using prompt_mcp.txt, ask the AntiGravity chatbot to review and implement.
 13. Run this prompt to allow Antigravity to modify the system_prompt to use the DB as the data source
     ```
@@ -144,4 +144,6 @@ NOTE: This questionaire is more like a Congitive Verifier Technique  which provi
     ```
 14. Apply the changes and run the Ex05.py in a separate Terminal.
 15. If any errors are displayed, ask the ChatBot to fix it and it fixes accordingly. 
- 
+NOTE: You may have to restart the IDE to view the MCP server that U have created. U should relaunch the tooling.py and click on refresh button.
+ <img width="636" height="512" alt="image" src="https://github.com/user-attachments/assets/a366ccde-5b36-4ec8-9052-b94b0425c04e" />
+
