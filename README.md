@@ -70,6 +70,13 @@ Demos on AI and Agentic AI
 ### To create a function calling  to a json db to get data
 ### What is Function calling?
 Function calling is the bridge between reasoning and action in AI. It lets models not just talk about the world but interact with it—fetching live data, running code, or automating workflows.
+| Aspect | Plain Text Generation | Function Calling |
+| --- | --- | --- |
+| Output Format | Free-form text | Structured JSON/tool call |
+| Capabilities | Language only | Language + external actions |
+| Example Use | “It’s usually warm in Bengaluru.” | Calls weather API → “It’s 28°C in Bengaluru right now.” |
+| Applications | Chatbots, writing | AI agents, automation, workflows |
+
 
 Steps:
 1. Create a JSON file that contains sample data for a vegetable vendor which has a collection of Vegetables/Fruits with attributes Name, Type, Price. A Sample JSON file is shared. You can use the same file as your datasource.        
