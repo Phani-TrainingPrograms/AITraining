@@ -69,7 +69,7 @@ Demos on AI and Agentic AI
 ## Exercise 4
 ### To create a function calling  to a json db to get data
 ### What is Function calling?
-Function calling is the bridge between reasoning and action in AI. It lets models not just talk about the world but interact with it—fetching live data, running code, or automating workflows.
+Function calling in AI is the mechanism that lets a language model (like GPT) invoke external tools, APIs, or code functions by outputting structured requests (usually JSON), enabling the model to go beyond text generation and actually perform actions such as fetching data, running computations, or interacting with applications. Simply put : Function calling is the bridge between reasoning and action in AI. It lets models not just talk about the world but interact with it—fetching live data, running code, or automating workflows.
 | Aspect | Plain Text Generation | Function Calling |
 | --- | --- | --- |
 | Output Format | Free-form text | Structured JSON/tool call |
