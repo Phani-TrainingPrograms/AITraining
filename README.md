@@ -9,26 +9,30 @@ Demos on AI and Agentic AI
 
     
 ### Steps for creating a AI Project.
-1. Create a new project in the Google AI Studio.
-2. Generate a new key for that project. Keep it safe and use it in a secured manner.
-3. In the AI Studio, search for Model selection.
-4. Choose Gemini 3.5 Flash Lite Model. Models are patterns that are well tested/trained and consumed by programmers for building AI Strategies.
-5. Click on GetCode Tab beside the selected Model and copy it to clipboard.
-6. Create a new folder in your fav IDE (VS Code, Antigravity).  
-7. Paste the copied code into a py script file.
-8. Use the below command to install google genai
+1. Open the Google AI studio from this link: https://aistudio.google.com/welcome?utm_source=google&utm_medium=cpc&utm_campaign=Cloud-SS-DR-AIS-FY26-global-gsem-1713578&utm_content=text-ad&utm_term=KW_google%20ai%20studio&gad_source=1&gad_campaignid=23417416052&gbraid=0AAAAACn9t647Qm7FL9yGpuwRhaa-ySbYj&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpccN7ldwTqVRBXCiusvaqXNUQkypHSS5mZZ-5pkN8oW-qplABYg5IQaAkWIEALw_wcB
+2. Click on Get started and accept the End User licence and other options which shall redirect to the below screen.
+   <img width="1897" height="897" alt="image" src="https://github.com/user-attachments/assets/4a7d48e7-dd33-49b1-876c-973b9882a880" />
+
+3. Create a new project in the Google AI Studio.
+4. Generate a new key for that project. Keep it safe and use it in a secured manner.
+5. In the AI Studio, search for Model selection.
+6. Choose Gemini 3.5 Flash Lite Model. Models are patterns that are well tested/trained and consumed by programmers for building AI Strategies.
+7. Click on GetCode Tab beside the selected Model and copy it to clipboard.
+8. Create a new folder in your fav IDE (VS Code, Antigravity).  
+9. Paste the copied code into a py script file.
+10. Use the below command to install google genai
    ```
     py -m pip install google-genai
    ```
-9. Update the changes with the code from the shared Ex01.py.
-10. In the contents section, update the text property with the prompt(Question) that you want the AI to respond.
+11. Update the changes with the code from the shared Ex01.py.
+12. In the contents section, update the text property with the prompt(Question) that you want the AI to respond.
 <img width="571" height="257" alt="image" src="https://github.com/user-attachments/assets/02a73200-5782-4f54-9480-8df33580397b" />
       
-12. Set the generated API Key from step 2 to the variable called api_key.
+13. Set the generated API Key from step 2 to the variable called api_key.
     ```
     api_key="UR_API_KEY",
     ``` 
-13. Save the file and run the following command to execute the python script.
+14. Save the file and run the following command to execute the python script.
     ```
     py scriptName.py
     ```
