@@ -133,5 +133,9 @@ https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture
 NOTE: This questionaire is more like a Congitive Verifier Technique  which provides a platform for discussion with the expert. 
 ```     
 9. After all the questions are answered, ask the Chatbot to generate the required files. 
-10. This shall update the tooling.py. 
+10. This shall update the tooling.py.
+11. Run the tooling.py in a separate terminal
+12. Using prompt_mcp.txt, ask the AntiGravity chatbot to review and implement. 
+13. Apply the changes and run the Ex05.py in a separate Terminal.
+14. If any errors are displayed, ask the ChatBot to fix it and it fixes accordingly. 
  
