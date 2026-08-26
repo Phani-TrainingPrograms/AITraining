@@ -124,10 +124,12 @@ https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture
 <img width="243" height="181" alt="image" src="https://github.com/user-attachments/assets/6ce209f4-dc53-4c90-87ee-4154279cdacf" />
 
 6. The Chatbot shall generate the following files:
-    a. college.db ->The SQLLite database that contains the data for our chatbot. 
+   
+    a. college.db ->The SQLLite database that contains the data for our chatbot.
+    
     b. synth_data.py -> The script for extracting the data from the SQLLite. 
-7. Create a new file called question_prompt.txt and copy the contents from the question_prompt.txt in the repo.
-8. Drag the question_prompt.txt into the Antigravity chatbot and answer the relavent questions raised by the chatbot.
+8. Create a new file called question_prompt.txt and copy the contents from the question_prompt.txt in the repo.
+9. Drag the question_prompt.txt into the Antigravity chatbot and answer the relavent questions raised by the chatbot.
 
 ```
 NOTE: This questionaire is more like a Congitive Verifier Technique  which provides a platform for discussion with the expert. 
@@ -135,7 +137,11 @@ NOTE: This questionaire is more like a Congitive Verifier Technique  which provi
 9. After all the questions are answered, ask the Chatbot to generate the required files. 
 10. This shall update the tooling.py.
 11. Run the tooling.py in a separate terminal
-12. Using prompt_mcp.txt, ask the AntiGravity chatbot to review and implement. 
-13. Apply the changes and run the Ex05.py in a separate Terminal.
-14. If any errors are displayed, ask the ChatBot to fix it and it fixes accordingly. 
+12. Using prompt_mcp.txt, ask the AntiGravity chatbot to review and implement.
+13. Run this prompt to allow Antigravity to modify the system_prompt to use the DB as the data source
+    ```
+    [Ex05.py](file;file:///c%3A/Trainings/AI%20training/SampleProj/Ex05.py) Review and implement with reference to [tooling.py](file;file:///c%3A/Trainings/AI%20training/SampleProj/tooling.py) 
+    ```
+14. Apply the changes and run the Ex05.py in a separate Terminal.
+15. If any errors are displayed, ask the ChatBot to fix it and it fixes accordingly. 
  
