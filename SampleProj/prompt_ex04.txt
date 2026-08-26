@@ -1,0 +1,25 @@
+Task : To create a function calling  to a json db to get data
+
+Context :
+- use Ex04.py and ui.py
+- load the system prompt form system_prompt.txt
+- create a tooling.py file 
+-- create functions to fetch the name, type and the price from the json file.
+-- json path : C:\Trainings\AI training\SampleProj\database.json
+
+- let there be an option in the ui load the system prompt.txt
+- on loading reset the conversation history
+- clear the screen
+
+- create the system prompt for the funtion calling of the appropritate function from tooling for a query from user.
+
+
+folder structure :
+- Ex04.py : it will be a simple program to get input from terminal and respond.
+- ui.py : it will be a simple text box with a button to send the query
+- .env : houses the API key
+- requirements.txt : needed libraries
+- readme.html : to setup, run and see results
+- database.json : the database
+- tooling.py : the function calls 
+- system_prompt.txt : the system prompt
