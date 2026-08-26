@@ -83,7 +83,7 @@ Steps:
 2. Create a new file called Ex04.py and copy the contents of Ex03.py into it. This file shall be refered by Antigravity chatbot based on the inputs we provide to generate the User interface. 
 3. Create a new file called prompt_Ex04.txt which shall contain the prompt that allows to create an User interface for our existing Chat Bot. 
 4. Copy the contents of the SampleProj\prompt_Ex04.txt that is shared in the Repo. 
-5. Make sure to modify the path of the JSON File database.json as per your file location. 
+5. Make sure to modify the path of the JSON File database.json as per your file location in the prompt_Ex04.txt. 
 6. Open the AntiGravity ChatBot and drag the prompt_ex04.txt into the ChatBot and type review and implement -> You should perform this step whenever you want AntiGravity ChatBot to respond and generate the required code for your Application. 
 7. Antigravity Chat bot shall modify the contents of Ex03.py to suit our requirement. 
 8. Antigravity shall also generate ui.py that shall contain the code for UI. 
