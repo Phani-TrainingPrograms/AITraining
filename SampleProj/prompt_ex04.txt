@@ -2,13 +2,13 @@ Task : To create a function calling  to a json db to get data
 
 Context :
 - use Ex04.py and ui.py
-- load the system prompt form system_prompt.txt
+- load the system prompt from system_prompt.txt
 - create a tooling.py file 
--- create functions to fetch the name, type and the price from the json file.
--- json path : C:\Trainings\AI training\SampleProj\database.json
+- create functions to fetch the name, type and the price from the json file.
+- json path : C:\Trainings\AI training\SampleProj\database.json
 
-- let there be an option in the ui load the system prompt.txt
-- on loading reset the conversation history
+- let there be an option in the ui to load the system prompt.txt
+- on loading, reset the conversation history
 - clear the screen
 
 - create the system prompt for the funtion calling of the appropritate function from tooling for a query from user.
