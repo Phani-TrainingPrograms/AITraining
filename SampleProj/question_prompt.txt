@@ -1,0 +1,8 @@
+Task: To discover the list of funtion calls to make from tooling.poy which is used by LLM 
+
+Context: 
+- Ask me 10 questions with 4 options each. 
+- One question at a time. 
+- Do not generate any code or modify any scripts untill all the questions are answered. 
+
+The database is in sqlite

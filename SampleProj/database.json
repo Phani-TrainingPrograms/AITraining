@@ -1,0 +1,54 @@
+{
+    "items": [
+        {
+            "name": "Tomato",
+            "type": "vegetable",
+            "price_per_kg_inr": 40
+        },
+        {
+            "name": "Potato",
+            "type": "vegetable",
+            "price_per_kg_inr": 35
+        },
+        {
+            "name": "Carrot",
+            "type": "vegetable",
+            "price_per_kg_inr": 60
+        },
+        {
+            "name": "Beans",
+            "type": "vegetable",
+            "price_per_kg_inr": 80
+        },
+        {
+            "name": "Cauliflower",
+            "type": "vegetable",
+            "price_per_kg_inr": 50
+        },
+        {
+            "name": "Apple",
+            "type": "fruit",
+            "price_per_kg_inr": 180
+        },
+        {
+            "name": "Banana",
+            "type": "fruit",
+            "price_per_kg_inr": 60
+        },
+        {
+            "name": "Orange",
+            "type": "fruit",
+            "price_per_kg_inr": 100
+        },
+        {
+            "name": "Papaya",
+            "type": "fruit",
+            "price_per_kg_inr": 50
+        },
+        {
+            "name": "Watermelon",
+            "type": "fruit",
+            "price_per_kg_inr": 35
+        }
+    ]
+}

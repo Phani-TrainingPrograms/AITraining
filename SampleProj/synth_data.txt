@@ -1,0 +1,11 @@
+Task: To create Synthetic data for college database
+
+Context:
+- Save the data into sqlite db
+- Use faker for creating data. 
+- let there be 3 tables
+- one for personal information
+- one for the fees paid status
+- onde for the marks( 6 subjects)
+- letthe names be used from south india
+- students studying graduation

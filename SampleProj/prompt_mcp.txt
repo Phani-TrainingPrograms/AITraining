@@ -1,0 +1,23 @@
+Task: Convert the existing tooling.py functions into an MCP (Model Context Protocol) server and register it with the IDE client configuration.
+
+Context:
+- Use python-mcp SDK (pin to version 1.x e.g. "mcp>=1.28.0,<2.0.0" to use FastMCP).
+- Modify tooling.py:
+  -- Import FastMCP and initialize the server with name "ItemDatabase".
+  -- Keep the existing functions but decorate them with @mcp.tool() so they become MCP tools.
+  -- Maintain standard function behaviors so bot.py can still import and call them normally.
+  -- Suppress pydantic warnings inside the code using python's `warnings` module so initialization output remains clean.
+  -- Add a __main__ entry point running `mcp.run()`.
+
+- Install requirements:
+  -- Add mcp>=1.28.0,<2.0.0 to requirements.txt and install it.
+
+- Configure mcp_config.json:
+  -- Register the server under the key "chatbot-tools-mcp".
+  -- Use the absolute path to your environment's python.exe to run it.
+  -- Pass the "-Wignore" flag to python to prevent conda or interpreter warnings from corrupting the stdio connection.
+
+Folder structure / Files involved:
+- tooling.py : The tool logic file to wrap with FastMCP decorators.
+- requirements.txt : The file to declare and lock the "mcp>=1.28.0,<2.0.0" dependency.
+- mcp_config.json : The IDE/Agent configuration file (typically located under C:\Users\HP\.gemini\config\mcp_config.json) to register the MCP server.
