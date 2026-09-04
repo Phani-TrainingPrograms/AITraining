@@ -17,8 +17,6 @@ Examples of human intelligence:
 * Learning patterns
 * Solving problems
 
-The video uses everyday examples such as Face ID, Siri, recommendation systems, Google Maps/Uber, ChatGPT and coding assistants to demonstrate that AI is already part of our daily lives. ([Scribd][2])
-
 ### Examples
 
 | Application       | AI capability                     |
@@ -2203,88 +2201,6 @@ After studying this video, you should be able to answer these without hesitation
 
 ---
 
-# 66. The 10 Things You MUST Remember
-
-If you're a complete fresher, don't try to memorize everything at once.
-
-Start with these:
-
-### 1.
-
-```text
-AI
- ↓
-ML
- ↓
-Deep Learning
- ↓
-Neural Networks
-```
-
-### 2.
-
-```text
-ML = Learning patterns from data
-```
-
-### 3.
-
-```text
-Training = Learn
-Inference = Predict
-```
-
-### 4.
-
-```text
-Supervised = Labels available
-Unsupervised = No labels
-Reinforcement = Rewards/Penalties
-```
-
-### 5.
-
-```text
-Classification = Category
-Regression = Number
-```
-
-### 6.
-
-```text
-Clustering = Group similar things
-```
-
-### 7.
-
-```text
-Deep Learning = Neural Networks
-```
-
-### 8.
-
-```text
-CNN → Images
-RNN/LSTM → Sequences
-Transformer → Attention + modern sequence processing
-```
-
-### 9.
-
-```text
-NLP → Human Language
-Computer Vision → Images/Videos
-```
-
-### 10.
-
-```text
-Generative AI → Creates new content
-LLM → Large language model
-```
-
----
-
 # 67. One-Page Revision Sheet
 
 ```text
@@ -2331,8 +2247,6 @@ LLM → Large language model
 ---
 
 ## Final takeaway
-
-The video is essentially building one mental model:
 
 > **AI is the big field. Machine Learning is a major way of implementing AI by learning patterns from data. Deep Learning uses neural networks to learn complex patterns, especially from unstructured data. Transformers and LLMs power much of today's generative AI, while NLP and Computer Vision are application/domain areas where these techniques are used.** ([YouTubeSummary][3])
 
