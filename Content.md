@@ -9,13 +9,26 @@
 
 ### Traditional Programming vs. AI
 ##### Traditional programming:
+- Approach: Approach: It relies on a rule-based system where a developer writes explicit, step-by-step instructions in languages like Java, C++, or Python.
+- Execution: The computer acts like a recipe follower — it executes commands precisely as written without deviation or thought.
+- Error Handling: Bugs or unexpected inputs must be manually diagnosed and fixed by a programmer updating the source code. 
 
+##### AI Approach
+- Approach: It relies on learning-based systems, using algorithms that analyze large datasets to build their own internal models. 
+- Execution: Instead of telling the machine how to solve a problem, developers feed it examples and desired outcomes so it can generalize rules on its own.
+- Error Handling: AI systems can adapt to minor variations and new scenarios, though they can still fail or behave unpredictably if trained on biased data.
+ 
+Traditional programming:
+
+```text
 INPUT + PROGRAMMED RULES
            ↓
          OUTPUT
+```
 
-##### Machine Learning:
+Machine Learning:
 
+```text
 INPUT + OUTPUT EXAMPLES
            ↓
       ML ALGORITHM
@@ -25,8 +38,11 @@ INPUT + OUTPUT EXAMPLES
       NEW INPUT
            ↓
        PREDICTION
+```
+
 This distinction is extremely important.
-- Error Handling: AI systems can adapt to minor variations and new scenarios, though they can still fail or behave unpredictably if trained on biased data.
+
+---
 <img width="1698" height="665" alt="image" src="https://github.com/user-attachments/assets/997425cd-d9fe-4bbe-8601-b9153dfdf1d5" />
 
 ## Terms and terminologies in AI
