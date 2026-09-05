@@ -7,6 +7,9 @@
 ### AI for Managers
 ### AI for Freshers
 
+![Uploading image.png…]()
+
+
 ### Traditional Programming vs. AI
 ##### Traditional programming:
 - Approach: It relies on a rule-based system where a developer writes explicit, step-by-step instructions in languages like Java, C++, or Python.
@@ -44,6 +47,8 @@ This distinction is extremely important.
 
 ---
 <img width="1698" height="665" alt="image" src="https://github.com/user-attachments/assets/997425cd-d9fe-4bbe-8601-b9153dfdf1d5" />
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b5c4f1e8-1624-44f5-a66f-54b3b66cab6d" />
 
 ## Terms and terminologies in AI
 <img width="2816" height="1536" alt="image" src="https://github.com/user-attachments/assets/cd56f57a-01ef-4b38-b3c7-cb9bc9c68e30" />
