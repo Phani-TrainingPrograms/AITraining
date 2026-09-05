@@ -7,8 +7,7 @@
 ### AI for Managers
 ### AI for Freshers
 
-![Uploading image.png…]()
-
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/994b0e90-d80e-4fde-88f8-648857ac0d1e" />
 
 ### Traditional Programming vs. AI
 ##### Traditional programming:
@@ -53,6 +52,9 @@ This distinction is extremely important.
 ## Terms and terminologies in AI
 <img width="2816" height="1536" alt="image" src="https://github.com/user-attachments/assets/cd56f57a-01ef-4b38-b3c7-cb9bc9c68e30" />
 <img width="918" height="687" alt="image" src="https://github.com/user-attachments/assets/1bb3b5cd-81fa-429c-a5c6-53766be59a32" />
+
+<img width="1190" height="1322" alt="image" src="https://github.com/user-attachments/assets/6f47edc2-fd64-4940-868f-4371498eda2a" />
+
 
 ### What is ML?
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f89f4d6c-49c9-4b5d-9457-f38bd5067ec0" />
