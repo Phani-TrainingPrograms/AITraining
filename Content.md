@@ -8,8 +8,9 @@
 ### AI for Freshers
 
 ### Traditional Programming vs. AI
+<img width="1698" height="665" alt="image" src="https://github.com/user-attachments/assets/997425cd-d9fe-4bbe-8601-b9153dfdf1d5" />
 
-## Terms and terminlogies in AI
+## Terms and terminologies in AI
 <img width="2816" height="1536" alt="image" src="https://github.com/user-attachments/assets/cd56f57a-01ef-4b38-b3c7-cb9bc9c68e30" />
 <img width="918" height="687" alt="image" src="https://github.com/user-attachments/assets/1bb3b5cd-81fa-429c-a5c6-53766be59a32" />
 
