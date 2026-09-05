@@ -9,7 +9,7 @@
 
 ### Traditional Programming vs. AI
 ##### Traditional programming:
-- Approach: Approach: It relies on a rule-based system where a developer writes explicit, step-by-step instructions in languages like Java, C++, or Python.
+- Approach: It relies on a rule-based system where a developer writes explicit, step-by-step instructions in languages like Java, C++, or Python.
 - Execution: The computer acts like a recipe follower — it executes commands precisely as written without deviation or thought.
 - Error Handling: Bugs or unexpected inputs must be manually diagnosed and fixed by a programmer updating the source code. 
 
